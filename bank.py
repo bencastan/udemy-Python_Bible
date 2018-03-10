@@ -7,7 +7,7 @@ class Account:
     def deposit(self, amount):
             self.balance += amount
 
-    def withdrawl(self, amount):
+    def withdrawal(self, amount):
             if self.balance - amount >= self.min_balance:
                 self.balance -= amount
             else:
@@ -37,9 +37,9 @@ x = Current("Ben", 250)
 print(x)
 x.deposit(1001)
 print(x)
-x.withdrawl(8000)
+x.withdrawal(8000)
 print(x)
-x.withdrawl(800)
+x.withdrawal(800)
 print(x)
 
 y = Savings("Benc", 1000)
